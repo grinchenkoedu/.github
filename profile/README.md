@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://kubg.edu.ua/images/logo/logo_kubg.png" alt="Borys Grinchenko Kyiv University Logo" width="150" />
+  <img src="logo.png" alt="Borys Grinchenko Kyiv University Logo" width="180" />
 </p>
 
 <h1 align="center">Borys Grinchenko Kyiv University (grinchenkoedu)</h1>
