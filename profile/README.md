@@ -26,6 +26,7 @@ Our development primarily focuses on:
 *   🎓 **E-Learning Enhancements:** Plugins and optimizations for Learning Management Systems like Moodle.
 *   🔌 **API Integrations:** Seamless connections with essential services (e.g., Diia, StrikePlagiarism).
 *   💻 **Student & Research Projects:** Collaborative academic software engineering.
+*   🤖 **AI & Agentic Development:** Embracing AI-driven software engineering and agentic workflows in strict compliance with academic integrity, copyright laws, and ethical standards.
 
 <br>
 
@@ -37,6 +38,7 @@ Our development primarily focuses on:
 *   🎓 **Покращення електронного навчання:** Плагіни та оптимізації для систем управління навчанням, таких як Moodle.
 *   🔌 **API Інтеграції:** Безшовне підключення до ключових сервісів (наприклад, Дія, StrikePlagiarism).
 *   💻 **Студентські та дослідницькі проєкти:** Спільна академічна розробка програмного забезпечення.
+*   🤖 **ШІ та агентна розробка:** Впровадження підходів до розробки програмного забезпечення на базі штучного інтелекту з суворим дотриманням академічної доброчесності, авторського права та етичних стандартів.
 
 ---
 
