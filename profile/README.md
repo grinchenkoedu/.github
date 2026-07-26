@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Borys Grinchenko Kyiv University Logo" width="180" />
+  <img src="logo.png" alt="Borys Grinchenko Kyiv University Logo" />
 </p>
 
 <h1 align="center">Borys Grinchenko Kyiv University</h1>
