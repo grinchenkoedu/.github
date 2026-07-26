@@ -1,8 +1,13 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/en/2/27/Borys_Grinchenko_Kyiv_University_logo.png" alt="Borys Grinchenko Kyiv University Logo" width="200" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_znak_Grinchenko_University.png" alt="Borys Grinchenko Kyiv University Logo" width="150" />
 </p>
 
 <h1 align="center">Borys Grinchenko Kyiv University (grinchenkoedu)</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" />
+  <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" />
+</p>
 
 <p align="center">
   <strong>Open Source Software and Educational Technology</strong><br>
