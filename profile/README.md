@@ -2,7 +2,7 @@
   <img src="logo.png" alt="Borys Grinchenko Kyiv University Logo" width="180" />
 </p>
 
-<h1 align="center">Borys Grinchenko Kyiv University (grinchenkoedu)</h1>
+<h1 align="center">Borys Grinchenko Kyiv University</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" />
