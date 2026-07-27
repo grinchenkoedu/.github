@@ -55,7 +55,7 @@ Our development primarily focuses on:
 ## 🤖 AI-Assisted Development
 
 We develop with AI assistance openly and deliberately. Our shared toolkit lives in
-**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** and **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — six
+**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** and **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** —
 [Google Antigravity](https://antigravity.google/docs) and [Claude Code](https://claude.com/claude-code) skills covering an ordinary development day.
 
 For **Antigravity**, install them instantly via terminal:

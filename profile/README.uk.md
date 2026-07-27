@@ -56,7 +56,7 @@
 ## 🤖 Розробка за допомогою ШІ
 
 Ми розробляємо із залученням ШІ відкрито й усвідомлено. Наш спільний набір інструментів —
-**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** та **[claude-skills](https://github.com/grinchenkoedu/claude-skills)**: шість навичок
+**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** та **[claude-skills](https://github.com/grinchenkoedu/claude-skills)**: навички
 [Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code), що покривають звичайний робочий день розробника.
 
 Для **Antigravity**, миттєве встановлення через термінал:
