@@ -66,17 +66,18 @@ curl -fsSL https://raw.githubusercontent.com/grinchenkoedu/antigravity-skills/ma
 For **Claude Code**, install them via the marketplace:
 ```
 /plugin marketplace add grinchenkoedu/claude-skills
-/plugin install toolkit@grinchenkoedu
+/plugin install gku@grinchenkoedu
 ```
 
 | Command | What it does |
 |---|---|
-| `/plan` | Turns a request or a written brief into a plan, checked against the real code |
-| `/implement` | Builds it step by step, resuming where it stopped if interrupted |
-| `/review` | Checks your own changes before you push them |
-| `/pr-review` | Reviews someone else's pull request in an isolated worktree |
-| `/pr-resolve` | Works through review comments — verdict first, never blind fixes |
-| `/verify` | Runs the tests and drives the real thing to prove it works |
+| `/gku:init` | Writes this repository's `CLAUDE.md` — commands plus its family's conventions |
+| `/gku:plan` | Turns a request or a written brief into a plan, checked against the real code |
+| `/gku:implement` | Builds it step by step, resuming where it stopped if interrupted |
+| `/gku:review` | Checks your own changes before you push them |
+| `/gku:pr-review` | Reviews someone else's pull request in an isolated worktree |
+| `/gku:pr-resolve` | Works through review comments — verdict first, never blind fixes |
+| `/gku:verify` | Runs the tests and drives the real thing to prove it works |
 
 They are repository-agnostic, run a project's commands **inside its Docker container** so checks
 use the version the project actually targets, and are written to be economical enough for a basic
@@ -98,7 +99,7 @@ We welcome contributions from our students, faculty, and the global open-source 
    `CLAUDE.md`, that file is the source of truth for its setup, coding style and release steps.
 3. **Use Docker for local development.** Most of our projects ship a `docker-compose.yml` or a
    `Makefile`, so you should not need PHP, Composer or Python installed on your machine.
-4. **Check your own work before asking for review** — `/review` from our toolkit, or simply read
+4. **Check your own work before asking for review** — `/gku:review` from our toolkit, or simply read
    your own diff carefully.
 5. **Open a Pull Request and request [@matasarei](https://github.com/matasarei) as the reviewer.**
    Every change is reviewed by a person before it is merged; an automated review is a first pass,
