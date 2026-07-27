@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="logo.png" alt="Borys Grinchenko Kyiv University Logo" width="200" />
+  <img src="logo.png" alt="Borys Grinchenko Kyiv Metropolitan University Logo" width="200" />
 </p>
 
-<h1 align="center">Borys Grinchenko Kyiv University</h1>
+<h1 align="center">Borys Grinchenko Kyiv Metropolitan University</h1>
 
 <p align="center">
   <strong>🇬🇧 English</strong> ·
@@ -25,7 +25,7 @@
 
 ## 🏛 About Us
 
-Welcome to the official GitHub organization of **Borys Grinchenko Kyiv University**.
+Welcome to the official GitHub organization of **Borys Grinchenko Kyiv Metropolitan University**.
 Our mission is to foster open-source development, collaborate on educational technology, and
 provide tools that empower students, educators, and the broader academic community in Ukraine
 and worldwide.
