@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" /> <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity" />
 </p>
 
 <p align="center">
@@ -38,8 +38,8 @@ Our development primarily focuses on:
 
 ## 🌟 Featured Projects
 
-*   **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — our shared toolkit of
-    [Claude Code](https://claude.com/claude-code) skills for everyday development: planning,
+*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** & **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — our shared toolkit of
+    [Google Antigravity](https://antigravity.google/docs) and [Claude Code](https://claude.com/claude-code) skills for everyday development: planning,
     implementing, reviewing and verifying. Repository-agnostic, documented in English and
     Ukrainian. See below.
 *   **[local_cleanup](https://github.com/grinchenkoedu/local_cleanup)** — a robust Moodle plugin
@@ -55,10 +55,15 @@ Our development primarily focuses on:
 ## 🤖 AI-Assisted Development
 
 We develop with AI assistance openly and deliberately. Our shared toolkit lives in
-**[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — six
-[Claude Code](https://claude.com/claude-code) skills covering an ordinary development day.
-Install them with two commands:
+**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** and **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — six
+[Google Antigravity](https://antigravity.google/docs) and [Claude Code](https://claude.com/claude-code) skills covering an ordinary development day.
 
+For **Antigravity**, install them instantly via terminal:
+```bash
+curl -fsSL https://raw.githubusercontent.com/grinchenkoedu/antigravity-skills/main/install.sh | bash
+```
+
+For **Claude Code**, install them via the marketplace:
 ```
 /plugin marketplace add grinchenkoedu/claude-skills
 /plugin install toolkit@grinchenkoedu
@@ -75,9 +80,7 @@ Install them with two commands:
 
 They are repository-agnostic, run a project's commands **inside its Docker container** so checks
 use the version the project actually targets, and are written to be economical enough for a basic
-Claude subscription. Full documentation, including a beginner's walkthrough, is available in
-[English](https://github.com/grinchenkoedu/claude-skills/blob/main/README.md) and
-[Ukrainian](https://github.com/grinchenkoedu/claude-skills/blob/main/README.uk.md).
+Claude or Google Antigravity subscription. Full documentation, including a beginner's walkthrough, is available in the respective repositories.
 
 > **Academic integrity:** AI assistance is a tool, not an author. You remain responsible for
 > every line you submit — understand it, test it, and be able to explain it. Never submit code
