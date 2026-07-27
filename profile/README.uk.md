@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" /> <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity" />
 </p>
 
 <p align="center">
@@ -38,8 +38,8 @@
 
 ## 🌟 Популярні проєкти
 
-*   **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — наш спільний набір
-    навичок [Claude Code](https://claude.com/claude-code) для щоденної розробки: планування,
+*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** & **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — наш спільний набір
+    навичок [Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code) для щоденної розробки: планування,
     реалізація, рецензування та перевірка. Не прив'язаний до конкретного репозиторію,
     документація англійською та українською. Див. нижче.
 *   **[local_cleanup](https://github.com/grinchenkoedu/local_cleanup)** — надійний плагін Moodle,
@@ -56,10 +56,15 @@
 ## 🤖 Розробка за допомогою ШІ
 
 Ми розробляємо із залученням ШІ відкрито й усвідомлено. Наш спільний набір інструментів —
-**[claude-skills](https://github.com/grinchenkoedu/claude-skills)**: шість навичок
-[Claude Code](https://claude.com/claude-code), що покривають звичайний робочий день розробника.
-Встановлення — дві команди:
+**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** та **[claude-skills](https://github.com/grinchenkoedu/claude-skills)**: шість навичок
+[Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code), що покривають звичайний робочий день розробника.
 
+Для **Antigravity**, миттєве встановлення через термінал:
+```bash
+curl -fsSL https://raw.githubusercontent.com/grinchenkoedu/antigravity-skills/main/install.sh | bash
+```
+
+Для **Claude Code**, встановлення через маркетплейс:
 ```
 /plugin marketplace add grinchenkoedu/claude-skills
 /plugin install toolkit@grinchenkoedu
@@ -76,9 +81,8 @@
 
 Вони не прив'язані до конкретного репозиторію, виконують команди проєкту **всередині його
 Docker-контейнера** — тож перевірки йдуть на тій версії, під яку проєкт написано, — і достатньо
-ощадливі для базової підписки Claude. Повна документація, разом із покроковим прикладом для
-початківців, доступна [англійською](https://github.com/grinchenkoedu/claude-skills/blob/main/README.md)
-та [українською](https://github.com/grinchenkoedu/claude-skills/blob/main/README.uk.md).
+ощадливі для базової підписки Claude чи Google Antigravity. Повна документація, разом із покроковим прикладом для
+початківців, доступна у відповідних репозиторіях.
 
 > **Академічна доброчесність:** ШІ — це інструмент, а не автор. Ви відповідаєте за кожен
 > надісланий рядок: розумійте його, тестуйте й будьте здатні пояснити. Ніколи не надсилайте код,
