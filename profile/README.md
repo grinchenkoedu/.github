@@ -69,17 +69,18 @@ For **Claude Code**, install them via the marketplace:
 /plugin install gku@grinchenkoedu
 ```
 
-The two sets cover the same ground. The names differ because Claude Code namespaces plugin
-skills and Antigravity does not:
+The two sets cover the same ground. Both are prefixed so they cannot collide with anything else
+you have installed; only the separator differs, because Claude Code namespaces plugin skills with
+a colon and Antigravity has no namespace, so the prefix is part of the name:
 
 | What it does | Claude Code | Antigravity |
 |---|---|---|
-| Turn a request or a written brief into a plan, checked against the real code | `/gku:plan` | `/plan` |
-| Build it step by step, resuming where it stopped if interrupted | `/gku:implement` | `/implement` |
-| Check your own changes before you push them | `/gku:review` | `/review` |
-| Review someone else's pull request in an isolated worktree | `/gku:pr-review` | `/pr-review` |
-| Work through review comments — verdict first, never blind fixes | `/gku:pr-resolve` | `/pr-resolve` |
-| Run the tests and drive the real thing to prove it works | `/gku:verify` | `/verify` |
+| Turn a request or a written brief into a plan, checked against the real code | `/gku:plan` | `/gku-plan` |
+| Build it step by step, resuming where it stopped if interrupted | `/gku:implement` | `/gku-implement` |
+| Check your own changes before you push them | `/gku:review` | `/gku-review` |
+| Review someone else's pull request in an isolated worktree | `/gku:pr-review` | `/gku-pr-review` |
+| Work through review comments — verdict first, never blind fixes | `/gku:pr-resolve` | `/gku-pr-resolve` |
+| Run the tests and drive the real thing to prove it works | `/gku:verify` | `/gku-verify` |
 | Write a repository's `CLAUDE.md` — commands plus its family's conventions | `/gku:init` | — |
 
 They are repository-agnostic, run a project's commands **inside its Docker container** so checks
@@ -102,7 +103,7 @@ We welcome contributions from our students, faculty, and the global open-source 
    `CLAUDE.md`, that file is the source of truth for its setup, coding style and release steps.
 3. **Use Docker for local development.** Most of our projects ship a `docker-compose.yml` or a
    `Makefile`, so you should not need PHP, Composer or Python installed on your machine.
-4. **Check your own work before asking for review** — `/gku:review` or `/review` from our toolkits, or simply read
+4. **Check your own work before asking for review** — `/gku:review` or `/gku-review` from our toolkits, or simply read
    your own diff carefully.
 5. **Open a Pull Request and request [@matasarei](https://github.com/matasarei) as the reviewer.**
    Every change is reviewed by a person before it is merged; an automated review is a first pass,
