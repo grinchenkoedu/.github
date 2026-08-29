@@ -75,13 +75,15 @@ a colon and Antigravity has no namespace, so the prefix is part of the name:
 
 | What it does | Claude Code | Antigravity |
 |---|---|---|
+| Write a repository's `CLAUDE.md` or `GEMINI.md` — commands plus its family's conventions | `/gku:init` | `/gku-init` |
 | Turn a request or a written brief into a plan, checked against the real code | `/gku:plan` | `/gku-plan` |
 | Build it step by step, resuming where it stopped if interrupted | `/gku:implement` | `/gku-implement` |
 | Check your own changes before you push them | `/gku:review` | `/gku-review` |
+| Investigate a symptom, or apply review findings — one commit each | `/gku:fix` | `/gku-fix` |
+| Open the pull request for this branch, or update the existing one | `/gku:pr` | `/gku-pr` |
 | Review someone else's pull request in an isolated worktree | `/gku:pr-review` | `/gku-pr-review` |
 | Work through review comments — verdict first, never blind fixes | `/gku:pr-resolve` | `/gku-pr-resolve` |
 | Run the tests and drive the real thing to prove it works | `/gku:verify` | `/gku-verify` |
-| Write a repository's `CLAUDE.md` — commands plus its family's conventions | `/gku:init` | — |
 
 They are repository-agnostic, run a project's commands **inside its Docker container** so checks
 use the version the project actually targets, and are written to be economical enough for a basic
