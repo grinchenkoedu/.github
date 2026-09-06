@@ -69,13 +69,17 @@ For **Claude Code**, install them via the marketplace:
 /plugin install gku@grinchenkoedu
 ```
 
-The two sets cover the same ground. Both are prefixed so they cannot collide with anything else
-you have installed; only the separator differs, because Claude Code namespaces plugin skills with
-a colon and Antigravity has no namespace, so the prefix is part of the name:
+The two sets are maintained together: the same eleven skills, the same rules underneath, and the
+same wording, updated in step so neither drifts ahead of the other. Both are prefixed so they
+cannot collide with anything else you have installed; only the separator differs, because Claude
+Code namespaces plugin skills with a colon and Antigravity has no namespace, so the prefix is
+part of the name:
 
 | What it does | Claude Code | Antigravity |
 |---|---|---|
 | Write a repository's `CLAUDE.md` or `GEMINI.md` — commands plus its family's conventions | `/gku:init` | `/gku-init` |
+| Read a whole repository against the rules and hand back a plan, in branch-sized rounds | `/gku:audit` | `/gku-audit` |
+| Find an answer across the code and the internet, for the versions you actually run | `/gku:research` | `/gku-research` |
 | Turn a request or a written brief into a plan, checked against the real code | `/gku:plan` | `/gku-plan` |
 | Build it step by step, resuming where it stopped if interrupted | `/gku:implement` | `/gku-implement` |
 | Check your own changes before you push them | `/gku:review` | `/gku-review` |
@@ -84,6 +88,10 @@ a colon and Antigravity has no namespace, so the prefix is part of the name:
 | Review someone else's pull request in an isolated worktree | `/gku:pr-review` | `/gku-pr-review` |
 | Work through review comments — verdict first, never blind fixes | `/gku:pr-resolve` | `/gku-pr-resolve` |
 | Run the tests and drive the real thing to prove it works | `/gku:verify` | `/gku-verify` |
+
+Beyond the separator, what differs is the harness rather than the method: each set writes the
+conventions file its own tool reads — `CLAUDE.md` or `GEMINI.md` — and installs the way that tool
+expects.
 
 They are repository-agnostic, run a project's commands **inside its Docker container** so checks
 use the version the project actually targets, and are written to be economical enough for a basic
