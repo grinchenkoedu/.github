@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Borys Grinchenko Kyiv Metropolitan University Logo" width="200" />
+  <img src="https://raw.githubusercontent.com/grinchenkoedu/.github/main/profile/logo.png" alt="Borys Grinchenko Kyiv Metropolitan University Logo" width="200" />
 </p>
 
 <h1 align="center">Borys Grinchenko Kyiv Metropolitan University</h1>
