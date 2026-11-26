@@ -38,8 +38,8 @@
 
 ## 🌟 Популярні проєкти
 
-*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)**, **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** & **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)** — наші спільні набори
-    навичок [Google Antigravity](https://antigravity.google/docs), [Claude Code](https://claude.com/claude-code) та [OpenCode](https://opencode.ai) для щоденної розробки: планування,
+*   **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)**, **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** & **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — наші спільні набори
+    навичок [OpenCode](https://opencode.ai), [Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code) для щоденної розробки: планування,
     реалізація, рецензування та перевірка. Не прив'язані до конкретного репозиторію,
     документація англійською та українською. Див. нижче.
 *   **[local_cleanup](https://github.com/grinchenkoedu/local_cleanup)** — надійний плагін Moodle,
@@ -56,8 +56,13 @@
 ## 🤖 Розробка за допомогою ШІ
 
 Ми розробляємо із залученням ШІ відкрито й усвідомлено. Наші спільні набори інструментів —
-**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)**, **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** та **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)**: навички
-[Google Antigravity](https://antigravity.google/docs), [Claude Code](https://claude.com/claude-code) та [OpenCode](https://opencode.ai), що покривають звичайний робочий день розробника.
+**[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)**, **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** та **[claude-skills](https://github.com/grinchenkoedu/claude-skills)**: навички
+[OpenCode](https://opencode.ai), [Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code), що покривають звичайний робочий день розробника.
+
+Для **OpenCode**, клонуйте репозиторій і запустіть інсталятор:
+```bash
+git clone https://github.com/grinchenkoedu/opencode-skills.git && cd opencode-skills && ./install.sh
+```
 
 Для **Antigravity**, миттєве встановлення через термінал:
 ```bash
@@ -70,35 +75,30 @@ curl -fsSL https://raw.githubusercontent.com/grinchenkoedu/antigravity-skills/ma
 /plugin install gku@grinchenkoedu
 ```
 
-Для **OpenCode**, клонуйте репозиторій і запустіть інсталятор:
-```bash
-git clone https://github.com/grinchenkoedu/opencode-skills.git && cd opencode-skills && ./install.sh
-```
+Набори дотримуються спільного процесу: OpenCode використовує префікс `dev-` (через меню `/skills`) і додатково має `/dev-plan-manual` для кроків, які ви пишете вручну, а Claude Code і Antigravity — `gku` (з роздільником `:` або `-`):
 
-Набори дотримуються спільного процесу: Claude Code і Antigravity використовують префікс `gku` (з роздільником `:` або `-`), а OpenCode — `dev-` (через меню `/skills`) і додатково має `/dev-plan-manual` для кроків, які ви пишете вручну:
-
-| Що робить | Claude Code | Antigravity | OpenCode |
+| Що робить | OpenCode | Claude Code | Antigravity |
 |---|---|---|---|
-| Створює `CLAUDE.md`, `GEMINI.md` або `AGENTS.md` репозиторію — команди та домовленості його родини | `/gku:init` | `/gku-init` | `/dev-init` |
-| Читає весь репозиторій проти правил і повертає план, поділений на раунди завбільшки з гілку | `/gku:audit` | `/gku-audit` | `/dev-audit` |
-| Шукає відповідь у коді та в інтернеті — для тих версій, які у вас справді працюють | `/gku:research` | `/gku-research` | `/dev-research` |
-| Перетворює запит або письмовий опис на план, звірений із реальним кодом | `/gku:plan` | `/gku-plan` | `/dev-plan` |
-| Планує роботу, яку ви пишете вручну, покроково | — | — | `/dev-plan-manual` |
-| Виконує його крок за кроком, продовжуючи з місця зупинки після перерви | `/gku:implement` | `/gku-implement` | `/dev-implement` |
-| Перевіряє ваші власні зміни перед відправкою | `/gku:review` | `/gku-review` | `/dev-review` |
-| Розслідує симптом або застосовує зауваження з рецензії — по коміту на кожне | `/gku:fix` | `/gku-fix` | `/dev-fix` |
-| Відкриває пул-реквест для цієї гілки, або оновлює вже існуючий | `/gku:pr` | `/gku-pr` | `/dev-pr` |
-| Рецензує чужий пул-реквест в ізольованому робочому дереві | `/gku:pr-review` | `/gku-pr-review` | `/dev-pr-review` |
-| Опрацьовує коментарі рецензентів — спершу вердикт, жодних сліпих виправлень | `/gku:pr-resolve` | `/gku-pr-resolve` | `/dev-pr-resolve` |
-| Запускає тести й перевіряє, що воно справді працює | `/gku:verify` | `/gku-verify` | `/dev-verify` |
+| Створює `AGENTS.md`, `CLAUDE.md` або `GEMINI.md` репозиторію — команди та домовленості його родини | `/dev-init` | `/gku:init` | `/gku-init` |
+| Читає весь репозиторій проти правил і повертає план, поділений на раунди завбільшки з гілку | `/dev-audit` | `/gku:audit` | `/gku-audit` |
+| Шукає відповідь у коді та в інтернеті — для тих версій, які у вас справді працюють | `/dev-research` | `/gku:research` | `/gku-research` |
+| Перетворює запит або письмовий опис на план, звірений із реальним кодом | `/dev-plan` | `/gku:plan` | `/gku-plan` |
+| Планує роботу, яку ви пишете вручну, покроково | `/dev-plan-manual` | — | — |
+| Виконує його крок за кроком, продовжуючи з місця зупинки після перерви | `/dev-implement` | `/gku:implement` | `/gku-implement` |
+| Перевіряє ваші власні зміни перед відправкою | `/dev-review` | `/gku:review` | `/gku-review` |
+| Розслідує симптом або застосовує зауваження з рецензії — по коміту на кожне | `/dev-fix` | `/gku:fix` | `/gku-fix` |
+| Відкриває пул-реквест для цієї гілки, або оновлює вже існуючий | `/dev-pr` | `/gku:pr` | `/gku-pr` |
+| Рецензує чужий пул-реквест в ізольованому робочому дереві | `/dev-pr-review` | `/gku:pr-review` | `/gku-pr-review` |
+| Опрацьовує коментарі рецензентів — спершу вердикт, жодних сліпих виправлень | `/dev-pr-resolve` | `/gku:pr-resolve` | `/gku-pr-resolve` |
+| Запускає тести й перевіряє, що воно справді працює | `/dev-verify` | `/gku:verify` | `/gku-verify` |
 
 Окрім префікса, різниця — у середовищі, а не в методі: кожен набір пише той файл із
-домовленостями, який читає його інструмент — `CLAUDE.md`, `GEMINI.md` чи `AGENTS.md`, — і ставиться так, як
+домовленостями, який читає його інструмент — `AGENTS.md`, `CLAUDE.md` чи `GEMINI.md`, — і ставиться так, як
 той інструмент очікує.
 
 Вони не прив'язані до конкретного репозиторію, виконують команди проєкту **всередині його
 Docker-контейнера** — тож перевірки йдуть на тій версії, під яку проєкт написано, — і достатньо
-ощадливі для базової підписки Claude, Google Antigravity чи OpenCode з хмарними або локальними моделями. Повна документація, разом із покроковим прикладом для
+ощадливі для OpenCode з хмарними або локальними моделями чи базової підписки Claude або Google Antigravity. Повна документація, разом із покроковим прикладом для
 початківців, доступна у відповідних репозиторіях.
 
 > **Академічна доброчесність:** ШІ — це інструмент, а не автор. Ви відповідаєте за кожен
