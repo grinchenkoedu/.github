@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" /> <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/OpenCode-1B1B1B?style=for-the-badge" alt="OpenCode" />
 </p>
 
 <p align="center">
@@ -38,9 +38,9 @@
 
 ## 🌟 Популярні проєкти
 
-*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** & **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — наш спільний набір
-    навичок [Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code) для щоденної розробки: планування,
-    реалізація, рецензування та перевірка. Не прив'язаний до конкретного репозиторію,
+*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)**, **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** & **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)** — наші спільні набори
+    навичок [Google Antigravity](https://antigravity.google/docs), [Claude Code](https://claude.com/claude-code) та [OpenCode](https://opencode.ai) для щоденної розробки: планування,
+    реалізація, рецензування та перевірка. Не прив'язані до конкретного репозиторію,
     документація англійською та українською. Див. нижче.
 *   **[local_cleanup](https://github.com/grinchenkoedu/local_cleanup)** — надійний плагін Moodle,
     призначений для оптимізації продуктивності сховища та баз даних шляхом пошуку та видалення
@@ -55,9 +55,9 @@
 
 ## 🤖 Розробка за допомогою ШІ
 
-Ми розробляємо із залученням ШІ відкрито й усвідомлено. Наш спільний набір інструментів —
-**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** та **[claude-skills](https://github.com/grinchenkoedu/claude-skills)**: навички
-[Google Antigravity](https://antigravity.google/docs) та [Claude Code](https://claude.com/claude-code), що покривають звичайний робочий день розробника.
+Ми розробляємо із залученням ШІ відкрито й усвідомлено. Наші спільні набори інструментів —
+**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)**, **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** та **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)**: навички
+[Google Antigravity](https://antigravity.google/docs), [Claude Code](https://claude.com/claude-code) та [OpenCode](https://opencode.ai), що покривають звичайний робочий день розробника.
 
 Для **Antigravity**, миттєве встановлення через термінал:
 ```bash
@@ -70,33 +70,35 @@ curl -fsSL https://raw.githubusercontent.com/grinchenkoedu/antigravity-skills/ma
 /plugin install gku@grinchenkoedu
 ```
 
-Обидва набори розвиваються разом: ті самі одинадцять навичок, ті самі правила під ними й ті самі
-формулювання, які оновлюються в один крок, щоб жоден не відставав. Обидва мають префікс, щоб не
-конфліктувати з нічим іншим, що ви встановили; різниться лише роздільник: Claude Code відокремлює
-простір імен плагіна двокрапкою, а в Antigravity простору імен немає, тож префікс є частиною
-назви:
+Для **OpenCode**, клонуйте репозиторій і запустіть інсталятор:
+```bash
+git clone https://github.com/grinchenkoedu/opencode-skills.git && cd opencode-skills && ./install.sh
+```
 
-| Що робить | Claude Code | Antigravity |
-|---|---|---|
-| Створює `CLAUDE.md` або `GEMINI.md` репозиторію — команди та домовленості його родини | `/gku:init` | `/gku-init` |
-| Читає весь репозиторій проти правил і повертає план, поділений на раунди завбільшки з гілку | `/gku:audit` | `/gku-audit` |
-| Шукає відповідь у коді та в інтернеті — для тих версій, які у вас справді працюють | `/gku:research` | `/gku-research` |
-| Перетворює запит або письмовий опис на план, звірений із реальним кодом | `/gku:plan` | `/gku-plan` |
-| Виконує його крок за кроком, продовжуючи з місця зупинки після перерви | `/gku:implement` | `/gku-implement` |
-| Перевіряє ваші власні зміни перед відправкою | `/gku:review` | `/gku-review` |
-| Розслідує симптом або застосовує зауваження з рецензії — по коміту на кожне | `/gku:fix` | `/gku-fix` |
-| Відкриває пул-реквест для цієї гілки, або оновлює вже існуючий | `/gku:pr` | `/gku-pr` |
-| Рецензує чужий пул-реквест в ізольованому робочому дереві | `/gku:pr-review` | `/gku-pr-review` |
-| Опрацьовує коментарі рецензентів — спершу вердикт, жодних сліпих виправлень | `/gku:pr-resolve` | `/gku-pr-resolve` |
-| Запускає тести й перевіряє, що воно справді працює | `/gku:verify` | `/gku-verify` |
+Набори дотримуються спільного процесу: Claude Code і Antigravity використовують префікс `gku` (з роздільником `:` або `-`), а OpenCode — `dev-` (через меню `/skills`) і додатково має `/dev-plan-manual` для кроків, які ви пишете вручну:
 
-Окрім роздільника, різниця — у середовищі, а не в методі: кожен набір пише той файл із
-домовленостями, який читає його інструмент — `CLAUDE.md` чи `GEMINI.md`, — і ставиться так, як
+| Що робить | Claude Code | Antigravity | OpenCode |
+|---|---|---|---|
+| Створює `CLAUDE.md`, `GEMINI.md` або `AGENTS.md` репозиторію — команди та домовленості його родини | `/gku:init` | `/gku-init` | `/dev-init` |
+| Читає весь репозиторій проти правил і повертає план, поділений на раунди завбільшки з гілку | `/gku:audit` | `/gku-audit` | `/dev-audit` |
+| Шукає відповідь у коді та в інтернеті — для тих версій, які у вас справді працюють | `/gku:research` | `/gku-research` | `/dev-research` |
+| Перетворює запит або письмовий опис на план, звірений із реальним кодом | `/gku:plan` | `/gku-plan` | `/dev-plan` |
+| Планує роботу, яку ви пишете вручну, покроково | — | — | `/dev-plan-manual` |
+| Виконує його крок за кроком, продовжуючи з місця зупинки після перерви | `/gku:implement` | `/gku-implement` | `/dev-implement` |
+| Перевіряє ваші власні зміни перед відправкою | `/gku:review` | `/gku-review` | `/dev-review` |
+| Розслідує симптом або застосовує зауваження з рецензії — по коміту на кожне | `/gku:fix` | `/gku-fix` | `/dev-fix` |
+| Відкриває пул-реквест для цієї гілки, або оновлює вже існуючий | `/gku:pr` | `/gku-pr` | `/dev-pr` |
+| Рецензує чужий пул-реквест в ізольованому робочому дереві | `/gku:pr-review` | `/gku-pr-review` | `/dev-pr-review` |
+| Опрацьовує коментарі рецензентів — спершу вердикт, жодних сліпих виправлень | `/gku:pr-resolve` | `/gku-pr-resolve` | `/dev-pr-resolve` |
+| Запускає тести й перевіряє, що воно справді працює | `/gku:verify` | `/gku-verify` | `/dev-verify` |
+
+Окрім префікса, різниця — у середовищі, а не в методі: кожен набір пише той файл із
+домовленостями, який читає його інструмент — `CLAUDE.md`, `GEMINI.md` чи `AGENTS.md`, — і ставиться так, як
 той інструмент очікує.
 
 Вони не прив'язані до конкретного репозиторію, виконують команди проєкту **всередині його
 Docker-контейнера** — тож перевірки йдуть на тій версії, під яку проєкт написано, — і достатньо
-ощадливі для базової підписки Claude чи Google Antigravity. Повна документація, разом із покроковим прикладом для
+ощадливі для базової підписки Claude, Google Antigravity чи OpenCode з хмарними або локальними моделями. Повна документація, разом із покроковим прикладом для
 початківців, доступна у відповідних репозиторіях.
 
 > **Академічна доброчесність:** ШІ — це інструмент, а не автор. Ви відповідаєте за кожен

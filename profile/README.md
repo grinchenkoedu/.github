@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" /> <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /> <img src="https://img.shields.io/badge/Moodle-F98012?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" /> <img src="https://img.shields.io/badge/OpenCode-1B1B1B?style=for-the-badge" alt="OpenCode" />
 </p>
 
 <p align="center">
@@ -38,8 +38,8 @@ Our development primarily focuses on:
 
 ## 🌟 Featured Projects
 
-*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** & **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** — our shared toolkit of
-    [Google Antigravity](https://antigravity.google/docs) and [Claude Code](https://claude.com/claude-code) skills for everyday development: planning,
+*   **[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)**, **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** & **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)** — our shared toolkits of
+    [Google Antigravity](https://antigravity.google/docs), [Claude Code](https://claude.com/claude-code), and [OpenCode](https://opencode.ai) skills for everyday development: planning,
     implementing, reviewing and verifying. Repository-agnostic, documented in English and
     Ukrainian. See below.
 *   **[local_cleanup](https://github.com/grinchenkoedu/local_cleanup)** — a robust Moodle plugin
@@ -54,9 +54,9 @@ Our development primarily focuses on:
 
 ## 🤖 AI-Assisted Development
 
-We develop with AI assistance openly and deliberately. Our shared toolkit lives in
-**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)** and **[claude-skills](https://github.com/grinchenkoedu/claude-skills)** —
-[Google Antigravity](https://antigravity.google/docs) and [Claude Code](https://claude.com/claude-code) skills covering an ordinary development day.
+We develop with AI assistance openly and deliberately. Our shared toolkits live in
+**[antigravity-skills](https://github.com/grinchenkoedu/antigravity-skills)**, **[claude-skills](https://github.com/grinchenkoedu/claude-skills)**, and **[opencode-skills](https://github.com/grinchenkoedu/opencode-skills)** —
+[Google Antigravity](https://antigravity.google/docs), [Claude Code](https://claude.com/claude-code), and [OpenCode](https://opencode.ai) skills covering an ordinary development day.
 
 For **Antigravity**, install them instantly via terminal:
 ```bash
@@ -69,33 +69,35 @@ For **Claude Code**, install them via the marketplace:
 /plugin install gku@grinchenkoedu
 ```
 
-The two sets are maintained together: the same eleven skills, the same rules underneath, and the
-same wording, updated in step so neither drifts ahead of the other. Both are prefixed so they
-cannot collide with anything else you have installed; only the separator differs, because Claude
-Code namespaces plugin skills with a colon and Antigravity has no namespace, so the prefix is
-part of the name:
+For **OpenCode**, clone and run the installer:
+```bash
+git clone https://github.com/grinchenkoedu/opencode-skills.git && cd opencode-skills && ./install.sh
+```
 
-| What it does | Claude Code | Antigravity |
-|---|---|---|
-| Write a repository's `CLAUDE.md` or `GEMINI.md` — commands plus its family's conventions | `/gku:init` | `/gku-init` |
-| Read a whole repository against the rules and hand back a plan, in branch-sized rounds | `/gku:audit` | `/gku-audit` |
-| Find an answer across the code and the internet, for the versions you actually run | `/gku:research` | `/gku-research` |
-| Turn a request or a written brief into a plan, checked against the real code | `/gku:plan` | `/gku-plan` |
-| Build it step by step, resuming where it stopped if interrupted | `/gku:implement` | `/gku-implement` |
-| Check your own changes before you push them | `/gku:review` | `/gku-review` |
-| Investigate a symptom, or apply review findings — one commit each | `/gku:fix` | `/gku-fix` |
-| Open the pull request for this branch, or update the existing one | `/gku:pr` | `/gku-pr` |
-| Review someone else's pull request in an isolated worktree | `/gku:pr-review` | `/gku-pr-review` |
-| Work through review comments — verdict first, never blind fixes | `/gku:pr-resolve` | `/gku-pr-resolve` |
-| Run the tests and drive the real thing to prove it works | `/gku:verify` | `/gku-verify` |
+The toolkits share the same workflow: Claude Code and Antigravity use the `gku` prefix (with `:` vs `-` separators), while OpenCode uses `dev-` (accessed via the `/skills` picker) and adds `/dev-plan-manual` for hand-written steps:
 
-Beyond the separator, what differs is the harness rather than the method: each set writes the
-conventions file its own tool reads — `CLAUDE.md` or `GEMINI.md` — and installs the way that tool
+| What it does | Claude Code | Antigravity | OpenCode |
+|---|---|---|---|
+| Write a repository's `CLAUDE.md`, `GEMINI.md`, or `AGENTS.md` — commands plus its family's conventions | `/gku:init` | `/gku-init` | `/dev-init` |
+| Read a whole repository against the rules and hand back a plan, in branch-sized rounds | `/gku:audit` | `/gku-audit` | `/dev-audit` |
+| Find an answer across the code and the internet, for the versions you actually run | `/gku:research` | `/gku-research` | `/dev-research` |
+| Turn a request or a written brief into a plan, checked against the real code | `/gku:plan` | `/gku-plan` | `/dev-plan` |
+| Plan work you write by hand, one walkthrough at a time | — | — | `/dev-plan-manual` |
+| Build it step by step, resuming where it stopped if interrupted | `/gku:implement` | `/gku-implement` | `/dev-implement` |
+| Check your own changes before you push them | `/gku:review` | `/gku-review` | `/dev-review` |
+| Investigate a symptom, or apply review findings — one commit each | `/gku:fix` | `/gku-fix` | `/dev-fix` |
+| Open the pull request for this branch, or update the existing one | `/gku:pr` | `/gku-pr` | `/dev-pr` |
+| Review someone else's pull request in an isolated worktree | `/gku:pr-review` | `/gku-pr-review` | `/dev-pr-review` |
+| Work through review comments — verdict first, never blind fixes | `/gku:pr-resolve` | `/gku-pr-resolve` | `/dev-pr-resolve` |
+| Run the tests and drive the real thing to prove it works | `/gku:verify` | `/gku-verify` | `/dev-verify` |
+
+Beyond the prefix, what differs is the harness rather than the method: each set writes the
+conventions file its own tool reads — `CLAUDE.md`, `GEMINI.md`, or `AGENTS.md` — and installs the way that tool
 expects.
 
 They are repository-agnostic, run a project's commands **inside its Docker container** so checks
 use the version the project actually targets, and are written to be economical enough for a basic
-Claude or Google Antigravity subscription. Full documentation, including a beginner's walkthrough, is available in the respective repositories.
+Claude, Google Antigravity, or OpenCode cloud/local model setup. Full documentation, including a beginner's walkthrough, is available in the respective repositories.
 
 > **Academic integrity:** AI assistance is a tool, not an author. You remain responsible for
 > every line you submit — understand it, test it, and be able to explain it. Never submit code
